@@ -17,4 +17,12 @@ public abstract class Bird {
 
     public abstract void landDown();
 
+    public Status getStatus() {
+        return this.BirdStatus;
+    }
+
+
+    public void setStatus(Status status) {
+        this.BirdStatus = status;
+    }
 }

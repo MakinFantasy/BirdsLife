@@ -7,7 +7,7 @@ public class DieCommand implements Command{
 
     private final Bird bird;
 
-    private DieCommand (Bird bird) {
+    public DieCommand(Bird bird) {
         this.bird = bird;
     }
     @Override

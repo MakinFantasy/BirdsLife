@@ -1,0 +1,5 @@
+
+Feb 16, 2023 3:35:03 AM org.kata.java.handlers.ExceptionHandler handleException
+SEVERE: org.kata.java.birds.Pigeon status: DEAD
+Feb 16, 2023 3:35:03 AM org.kata.java.handlers.ExceptionHandler handleException
+INFO: org.kata.java.birds.Ostrich status: OnGROUND
