@@ -1,20 +1,38 @@
-import org.kata.java.birds.Ostrich;
-import org.kata.java.commands.ChillCommand;
-import org.kata.java.commands.DieCommand;
-import org.kata.java.commands.LandDownCommand;
-import org.kata.java.exec.BirdCommandExecuter;
-import org.kata.java.birds.Bird;
-import org.kata.java.birds.Pigeon;
-import org.kata.java.commands.FlyCommand;
-import org.kata.java.handlers.ExceptionHandler;
+import org.kata.java.bird.Bird;
+import org.kata.java.bird.Ostrich;
+import org.kata.java.bird.Pigeon;
+import org.kata.java.command.*;
+
+import java.util.logging.Logger;
 
 public class Main {
     public static void main (String[] args) {
-        Pigeon pigeon = new Pigeon();
-        Ostrich ostrich = new Ostrich();
-        ExceptionHandler handler = new ExceptionHandler(new BirdCommandExecuter(), pigeon, new DieCommand(pigeon));
-        handler.handleException();
-        handler = new ExceptionHandler(new BirdCommandExecuter(), ostrich, new LandDownCommand(ostrich));
-        handler.handleException();
+        Command[] pigeonCommands = {
+                new FlyCommand(),
+                new ChillCommand(),
+                new FlyCommand(),
+                new LandCommand(),
+                new DieCommand()
+        };
+
+        Command[] ostrichCommands = {
+                new FlyCommand(),
+                new LandCommand(),
+                new FlyCommand(),
+                new ChillCommand()
+        };
+
+        Bird pigeon = new Pigeon();
+
+        for (Command command : pigeonCommands) {
+            pigeon.handler(command);
+        }
+
+        Bird ostrich = new Ostrich();
+
+        for (Command command : ostrichCommands) {
+            ostrich.handler(command);
+        }
+
     }
 }

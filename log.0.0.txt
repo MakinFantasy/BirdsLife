@@ -1,5 +1,18 @@
-
-Feb 16, 2023 3:35:03 AM org.kata.java.handlers.ExceptionHandler handleException
-SEVERE: org.kata.java.birds.Pigeon status: DEAD
-Feb 16, 2023 3:35:03 AM org.kata.java.handlers.ExceptionHandler handleException
-INFO: org.kata.java.birds.Ostrich status: OnGROUND
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Pigeon handler
+INFO: Pigeon status - FLYING
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Pigeon handler
+INFO: Pigeon status - CHILLING
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Pigeon handler
+INFO: Pigeon status - FLYING
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Pigeon handler
+INFO: Pigeon status - OnGROUND
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Pigeon handler
+INFO: Pigeon status - DEAD
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Ostrich handler
+INFO: Ostrich status - FLYING
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Ostrich handler
+INFO: Ostrich status - OnGROUND
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Ostrich handler
+INFO: Ostrich status - FLYING
+Feb 27, 2023 10:16:07 PM org.kata.java.bird.Ostrich handler
+INFO: Ostrich status - DEAD BECAUSE FAT
